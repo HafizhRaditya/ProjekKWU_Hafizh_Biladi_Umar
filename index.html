@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Tahu Susu DenMilk | Dari Kolostrum, Desa Kemutug Lor Baturraden</title>
+<meta name="description" content="Tahu susu DenMilk dibuat dari kolostrum dan menggumpal sendiri tanpa bahan penggumpal. Jumlahnya terbatas, daftar antrean lewat WhatsApp. Desa Kemutug Lor, Baturraden, Banyumas.">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Tahu Susu DenMilk | Dari Kolostrum, Baturraden">
+<meta property="og:description" content="Tahu susu dari kolostrum, menggumpal sendiri tanpa bahan penggumpal. Hanya ada sesekali, daftar antrean lewat WhatsApp.">
+<meta property="og:image" content="assets/og-image.jpg">
+<meta name="theme-color" content="#5E7F3F">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --cream: #FFF8EC;
+    --paper: #FFFFFF;
+    --ink: #3E2415;
+    --muted: #7A6656;
+    --line: #EAD9C2;
+    --caramel: #C9782E;
+    --caramel-dark: #A35E1E;
+    --gold: #F2C46D;
+    --gold-soft: #FCE7B8;
+    --green: #5E7F3F;
+    --green-dark: #4A6631;
+    --green-soft: #E7EFDC;
+    --peach: #FFF1DD;
+    --shadow: 0 10px 30px rgba(62, 36, 21, .10);
+    --radius: 18px;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--cream);
+    color: var(--ink);
+    font-family: "Nunito", "Segoe UI", system-ui, sans-serif;
+    font-size: 17px;
+    line-height: 1.65;
+  }
+  img { max-width: 100%; height: auto; display: block; }
+  a { color: inherit; }
+  h1, h2, h3 { font-family: "Fraunces", Georgia, serif; line-height: 1.2; margin: 0 0 .5em; }
+  h1 { font-size: clamp(2rem, 4.6vw, 3.3rem); letter-spacing: -.01em; }
+  h2 { font-size: clamp(1.6rem, 3.2vw, 2.3rem); }
+  h3 { font-size: 1.25rem; }
+  p { margin: 0 0 1em; }
+  .wrap { max-width: 1120px; margin: 0 auto; padding: 0 20px; }
+  section { padding: 72px 0; }
+  .eyebrow {
+    display: inline-block; font-weight: 800; font-size: .8rem; letter-spacing: .12em;
+    text-transform: uppercase; color: var(--green); margin-bottom: .8em;
+  }
+  .lead { font-size: 1.12rem; color: var(--muted); max-width: 640px; }
+
+  /* tombol */
+  .btn {
+    display: inline-flex; align-items: center; gap: .55em; padding: .85em 1.35em;
+    border-radius: 999px; font-weight: 800; text-decoration: none; border: 2px solid transparent;
+    transition: transform .15s ease, background .15s ease;
+  }
+  .btn:hover { transform: translateY(-2px); }
+  .btn-primary { background: var(--green); color: #fff; }
+  .btn-primary:hover { background: var(--green-dark); }
+  .btn-ghost { border-color: var(--ink); color: var(--ink); background: transparent; }
+  .btn svg { width: 1.2em; height: 1.2em; flex: none; }
+
+  /* banner pengingat nomor WA */
+  .setup-note {
+    display: none; background: #FDE8C8; color: #6B3A10; text-align: center;
+    font-size: .9rem; padding: 8px 16px; border-bottom: 1px solid var(--line);
+  }
+  .setup-note.show { display: block; }
+
+  /* header */
+  header {
+    position: sticky; top: 0; z-index: 20; background: rgba(255, 248, 236, .92);
+    backdrop-filter: blur(8px); border-bottom: 1px solid var(--line);
+  }
+  .nav { display: flex; align-items: center; justify-content: space-between; height: 68px; }
+  .brand { display: flex; align-items: center; gap: .55em; text-decoration: none; font-family: "Fraunces", Georgia, serif; font-weight: 700; font-size: 1.45rem; }
+  .brand svg { width: 38px; height: 38px; }
+  .nav-links { display: flex; gap: 1.6em; align-items: center; }
+  .nav-links a { text-decoration: none; font-weight: 700; color: var(--muted); }
+  .nav-links a:hover { color: var(--ink); }
+  .nav .btn { padding: .6em 1.1em; font-size: .95rem; }
+  .nav-links a.btn-primary, .nav-links a.btn-primary:hover { color: #fff; }
+
+  /* hero */
+  .hero { position: relative; overflow: hidden; padding: 56px 0 80px; }
+  .hero .wrap { display: grid; grid-template-columns: 1.1fr .9fr; gap: 48px; align-items: center; }
+  .status {
+    display: inline-flex; align-items: center; gap: .6em; background: var(--paper); border: 1px solid var(--line);
+    border-radius: 999px; padding: .4em 1em .4em .8em; font-weight: 800; font-size: .92rem; margin-bottom: 1.1em;
+  }
+  .status .dot { width: 10px; height: 10px; border-radius: 50%; background: var(--caramel); box-shadow: 0 0 0 4px #FDE8C8; }
+  .status.ada .dot { background: var(--green); box-shadow: 0 0 0 4px var(--green-soft); }
+  .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin: 26px 0 28px; }
+  .chips { display: flex; flex-wrap: wrap; gap: 10px; padding: 0; margin: 0; list-style: none; }
+  .chips li { background: var(--paper); border: 1px solid var(--line); border-radius: 999px; padding: .35em .9em; font-size: .9rem; font-weight: 700; color: var(--muted); }
+  .hero-art { position: relative; justify-self: center; width: min(100%, 440px); }
+  .hero-art img { width: 100%; }
+  .price-tag {
+    position: absolute; left: -12px; bottom: 34px; background: var(--paper); border-radius: 16px; box-shadow: var(--shadow);
+    padding: .7em 1em; font-weight: 800; line-height: 1.25; font-size: 1.15rem;
+  }
+  .price-tag small { display: block; font-weight: 700; color: var(--muted); font-size: .78rem; }
+  .limited-tag {
+    position: absolute; right: 6px; top: 22px; background: var(--caramel); color: #fff; border-radius: 999px;
+    padding: .4em 1em; font-weight: 800; font-size: .85rem; box-shadow: var(--shadow); transform: rotate(4deg);
+  }
+  .spot { position: absolute; fill: var(--ink); opacity: .05; pointer-events: none; }
+
+  /* keunikan */
+  .why { background: var(--paper); }
+  .grid-4 { display: grid; grid-template-columns: repeat(4, 1fr); gap: 20px; margin-top: 32px; }
+  .card { background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); padding: 24px; }
+  .why .card { background: var(--cream); border: none; }
+  .icon { width: 52px; height: 52px; border-radius: 14px; background: var(--gold); display: grid; place-items: center; margin-bottom: 14px; }
+  .icon svg { width: 28px; height: 28px; stroke: var(--ink); fill: none; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  .card p { color: var(--muted); margin: 0; }
+
+  /* cara membuat */
+  .process .wrap { display: grid; grid-template-columns: .85fr 1.15fr; gap: 48px; align-items: center; }
+  .process-art { background: var(--green-soft); border-radius: 28px; padding: 36px; }
+  .process-art img { width: 100%; max-width: 360px; margin: 0 auto; }
+  .flow { list-style: none; padding: 0; margin: 24px 0 0; counter-reset: alur; }
+  .flow li { position: relative; padding: 0 0 22px 62px; }
+  .flow li::before {
+    counter-increment: alur; content: counter(alur); position: absolute; left: 0; top: -2px;
+    width: 42px; height: 42px; border-radius: 50%; background: var(--caramel); color: #fff;
+    display: grid; place-items: center; font-weight: 800;
+  }
+  .flow li:not(:last-child)::after { content: ""; position: absolute; left: 20px; top: 44px; bottom: 4px; width: 2px; background: var(--line); }
+  .flow b { display: block; font-size: 1.05rem; }
+  .flow span { color: var(--muted); }
+
+  /* kenapa jarang ada */
+  .rare { background: var(--ink); color: #FBEFDF; }
+  .rare .wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
+  .rare .eyebrow { color: var(--gold); }
+  .rare p { color: #E9D8C3; }
+  .rare-box { background: rgba(255, 255, 255, .06); border: 1px solid rgba(242, 196, 109, .35); border-radius: var(--radius); padding: 28px; }
+  .rare-box .big { font-family: "Fraunces", Georgia, serif; font-size: clamp(1.5rem, 2.8vw, 2rem); color: #fff; line-height: 1.3; margin: 0 0 .6em; }
+
+  /* antrean */
+  .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 32px; counter-reset: step; }
+  .step { position: relative; padding-top: 30px; }
+  .step::before {
+    counter-increment: step; content: counter(step); position: absolute; top: -18px; left: 24px;
+    width: 40px; height: 40px; border-radius: 50%; background: var(--green); color: #fff;
+    display: grid; place-items: center; font-weight: 800;
+  }
+  .order-box { margin-top: 28px; display: grid; grid-template-columns: 1fr auto; gap: 20px; align-items: center; background: var(--gold-soft); border-radius: var(--radius); padding: 22px 26px; }
+  .order-box p { margin: 0; }
+  .order-box .price { font-family: "Fraunces", Georgia, serif; font-size: 1.5rem; font-weight: 700; color: var(--caramel-dark); }
+  .order-box .price .unit { font-family: "Nunito", sans-serif; font-size: .95rem; color: var(--muted); font-weight: 700; }
+
+  /* susu murni */
+  .milk { background: var(--paper); }
+  .milk-card { display: grid; grid-template-columns: 240px 1fr; overflow: hidden; padding: 0; border: none; box-shadow: var(--shadow); margin-top: 28px; }
+  .milk-media { background: var(--green-soft); display: grid; place-items: center; padding: 26px; }
+  .milk-media img { max-width: 130px; }
+  .milk-body { padding: 28px; }
+  .milk-body .price { font-family: "Fraunces", Georgia, serif; font-size: 1.6rem; font-weight: 700; color: var(--caramel-dark); margin: .1em 0 .4em; }
+  .milk-body .price span { font-family: "Nunito", sans-serif; font-size: .95rem; color: var(--muted); font-weight: 700; }
+  .milk-body ul { margin: 0 0 1.2em; padding-left: 1.1em; color: var(--muted); }
+  .tag { display: inline-block; background: var(--green-soft); color: var(--green); font-weight: 800; font-size: .78rem; border-radius: 999px; padding: .25em .8em; margin-bottom: .7em; }
+
+  /* cerita */
+  .story .wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; }
+  .quote { font-family: "Fraunces", Georgia, serif; font-size: clamp(1.4rem, 2.6vw, 1.9rem); line-height: 1.35; border-left: 4px solid var(--caramel); padding-left: 22px; margin: 0; }
+  .quote cite { display: block; font-family: "Nunito", sans-serif; font-style: normal; font-size: .95rem; color: var(--caramel-dark); margin-top: 14px; }
+
+  /* lokasi */
+  .location { background: var(--paper); }
+  .location .wrap { display: grid; grid-template-columns: 1.2fr .8fr; gap: 40px; align-items: center; }
+  .loc-card { background: var(--cream); border-radius: var(--radius); padding: 28px; }
+  .loc-card dl { margin: 0 0 18px; }
+  .loc-card dt { font-weight: 800; }
+  .loc-card dd { margin: 0 0 12px; color: var(--muted); }
+
+  /* faq */
+  .faq { max-width: 820px; }
+  details { background: var(--paper); border: 1px solid var(--line); border-radius: 14px; padding: 16px 20px; margin-top: 12px; }
+  summary { cursor: pointer; font-weight: 800; list-style: none; display: flex; justify-content: space-between; gap: 16px; }
+  summary::-webkit-details-marker { display: none; }
+  summary::after { content: "+"; font-size: 1.3rem; line-height: 1; color: var(--caramel); }
+  details[open] summary::after { content: "–"; }
+  details p { color: var(--muted); margin: 12px 0 0; }
+
+  /* cta */
+  .cta { text-align: center; background: var(--green); color: #fff; border-radius: 28px; padding: 48px 24px; margin: 0 max(20px, calc((100% - 1080px) / 2)); }
+  .cta p { color: var(--green-soft); }
+  .cta .btn-primary { background: #fff; color: var(--green-dark); }
+
+  footer { padding: 40px 0 90px; color: var(--muted); font-size: .92rem; }
+  footer .wrap { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; }
+
+  .wa-float {
+    position: fixed; right: 18px; bottom: 18px; z-index: 30; display: none;
+    background: var(--caramel); color: #fff; border-radius: 999px; padding: .8em 1.15em;
+    font-weight: 800; text-decoration: none; box-shadow: var(--shadow);
+  }
+  .wa-float svg { width: 1.2em; height: 1.2em; vertical-align: -0.2em; margin-right: .3em; }
+
+  @media (max-width: 960px) {
+    .grid-4 { grid-template-columns: repeat(2, 1fr); }
+  }
+  @media (max-width: 760px) {
+    body { font-size: 16px; }
+    section { padding: 56px 0; }
+    .nav-links a:not(.btn) { display: none; }
+    .hero { padding-top: 36px; }
+    .hero .wrap, .process .wrap, .rare .wrap, .story .wrap, .location .wrap { grid-template-columns: 1fr; gap: 36px; }
+    .hero-art { width: min(94%, 380px); }
+    .price-tag { left: -4px; bottom: 16px; }
+    .limited-tag { right: 0; top: 8px; }
+    .grid-4, .steps { grid-template-columns: 1fr; }
+    .steps { gap: 34px; }
+    .process-art { padding: 24px; }
+    .order-box { grid-template-columns: 1fr; }
+    .milk-card { grid-template-columns: 1fr; }
+    .milk-media { padding: 22px; }
+    .milk-media img { max-width: 104px; }
+    .wa-float { display: inline-block; }
+  }
+</style>
+</head>
+<body>
+
+<div class="setup-note" id="setupNote">Nomor WhatsApp admin belum diisi. Ubah bagian <b>PENGATURAN</b> di bagian bawah file index.html sebelum halaman ini dipromosikan.</div>
+
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#beranda" aria-label="DenMilk, ke bagian atas">
+      <svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="19" fill="#F2C46D"/><path d="M9 14c3-4 7-3 8 0s-2 6-5 5-5-2-3-5z" fill="#3E2415"/><path d="M24 25c2-3 7-3 8 0s-3 6-6 5-3-3-2-5z" fill="#3E2415"/><circle cx="27" cy="12" r="3" fill="#3E2415"/></svg>
+      DenMilk
+    </a>
+    <nav class="nav-links" aria-label="Menu utama">
+      <a href="#tahu-susu">Tahu Susu</a>
+      <a href="#cara-buat">Cara Buat</a>
+      <a href="#susu-murni">Susu Murni</a>
+      <a href="#lokasi">Lokasi</a>
+      <a class="btn btn-primary js-wa js-label-pendek" data-jenis="tahu" href="#antrean">Daftar</a>
+    </nav>
+  </div>
+</header>
+
+<main id="beranda">
+  <section class="hero">
+    <svg class="spot" style="width:260px;top:-40px;left:-60px" viewBox="0 0 100 100" aria-hidden="true"><path d="M20 30c10-25 45-20 55 0s5 45-20 50S10 55 20 30z"/></svg>
+    <svg class="spot" style="width:180px;bottom:-30px;right:8%" viewBox="0 0 100 100" aria-hidden="true"><path d="M15 50c0-30 40-40 60-20s10 55-20 55S15 75 15 50z"/></svg>
+    <div class="wrap">
+      <div>
+        <div class="status" id="status"><span class="dot"></span><span id="statusText">Stok tahu susu sedang kosong</span></div>
+        <h1>Tahu susu dari kolostrum, hanya ada sesekali</h1>
+        <p class="lead">Tahu susu DenMilk dibuat dari susu pertama setelah sapi melahirkan. Susunya menggumpal sendiri saat dimasak, tanpa bahan penggumpal. Karena bahannya hanya ada beberapa hari setelah sapi melahirkan, jumlahnya selalu terbatas.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary js-wa js-label" data-jenis="tahu" href="#antrean">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8.5 8.5 0 0 1-12.6 7.4L3 21l1.6-5.2A8.5 8.5 0 1 1 21 12z"/></svg>
+            <span class="label">Daftar antrean lewat WhatsApp</span>
+          </a>
+          <a class="btn btn-ghost" href="#jarang">Kenapa jarang ada?</a>
+        </div>
+        <ul class="chips">
+          <li>Tanpa bahan penggumpal</li>
+          <li>Dari peternakan keluarga</li>
+          <li>Desa Kemutug Lor, Baturraden</li>
+        </ul>
+      </div>
+      <div class="hero-art">
+        <img src="assets/ilustrasi/utama.svg" alt="Ilustrasi sepiring tahu susu DenMilk dan botol susu" width="440" height="440">
+        <div class="limited-tag">Terbatas</div>
+        <div class="price-tag"><span class="js-harga">Rp10.000</span><small>tahu susu per kemasan</small></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="why" id="tahu-susu">
+    <div class="wrap">
+      <span class="eyebrow">Apa bedanya</span>
+      <h2>Bukan tahu susu biasa</h2>
+      <p class="lead">Tahu susu pada umumnya dibuat dari susu biasa yang ditambah bahan penggumpal. Tahu susu DenMilk dibuat dengan cara yang berbeda.</p>
+      <div class="grid-4">
+        <div class="card">
+          <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 2h6M10 2v3l-3 4v11a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9l-3-4V2"/><path d="M7 13h10"/></svg></div>
+          <h3>Dari kolostrum</h3>
+          <p>Bahannya susu dari perahan pertama sampai ketiga setelah sapi melahirkan.</p>
+        </div>
+        <div class="card">
+          <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7l9-4 9 4-9 4z"/><path d="M3 7v10l9 4 9-4V7M12 11v10"/></svg></div>
+          <h3>Menggumpal sendiri</h3>
+          <p>Saat dimasak, kolostrum menggumpal dengan sendirinya, jadi tidak perlu bahan penggumpal.</p>
+        </div>
+        <div class="card">
+          <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12l5 5L20 7"/></svg></div>
+          <h3>Bahannya sederhana</h3>
+          <p>Hanya kolostrum dan bumbu, tanpa bahan tambahan lainnya.</p>
+        </div>
+        <div class="card">
+          <div class="icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></div>
+          <h3>Jumlahnya terbatas</h3>
+          <p>Hanya bisa dibuat saat ada sapi yang baru melahirkan, jadi tidak selalu tersedia.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="process" id="cara-buat">
+    <div class="wrap">
+      <div class="process-art"><img src="assets/ilustrasi/tahu.svg" alt="Ilustrasi tahu susu DenMilk di atas piring" width="240" height="200"></div>
+      <div>
+        <span class="eyebrow">Cara membuatnya</span>
+        <h2>Dari kandang sampai jadi tahu</h2>
+        <ol class="flow">
+          <li><b>Kolostrum dikumpulkan</b><span>Susu dari perahan pertama, kedua, dan ketiga setelah sapi melahirkan dicampur jadi satu.</span></li>
+          <li><b>Diberi bumbu</b><span>Tidak ada bahan tambahan lain selain bumbu.</span></li>
+          <li><b>Dimasak dalam plastik</b><span>Susu dimasukkan ke plastik lalu dimasak sampai menggumpal sendiri.</span></li>
+          <li><b>Siap dinikmati</b><span>Setelah matang dan padat, tahu susu siap dimakan atau dikemas untuk pembeli.</span></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section class="rare" id="jarang">
+    <div class="wrap">
+      <div>
+        <span class="eyebrow">Kenapa jarang ada</span>
+        <h2>Bahannya hanya ada beberapa hari</h2>
+        <p>Kolostrum adalah susu yang keluar pada hari-hari pertama setelah sapi melahirkan. Susu ini tidak bisa dijual seperti susu segar biasa, dan bahannya baru ada lagi ketika ada sapi lain yang melahirkan.</p>
+        <p>Karena itu DenMilk tidak bisa membuat tahu susu setiap hari. Daripada kolostrumnya terbuang, susu ini diolah menjadi tahu susu yang jumlahnya terbatas.</p>
+      </div>
+      <div class="rare-box">
+        <p class="big">Supaya tidak kehabisan, daftar antrean dulu. Admin akan mengabari begitu tahu susu dibuat lagi.</p>
+        <a class="btn btn-primary js-wa js-label" data-jenis="tahu" href="#antrean"><span class="label">Daftar antrean lewat WhatsApp</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section id="antrean">
+    <div class="wrap">
+      <span class="eyebrow">Daftar antrean</span>
+      <h2>Cara kebagian tahu susu</h2>
+      <div class="steps">
+        <div class="card step">
+          <h3>Daftar lewat WhatsApp</h3>
+          <p>Tekan tombol daftar antrean. Pesan pembuka sudah disiapkan, tinggal isi nama dan jumlah kemasan.</p>
+        </div>
+        <div class="card step">
+          <h3>Tunggu kabar dari admin</h3>
+          <p>Admin mencatat antreanmu dan mengabari ketika ada sapi yang melahirkan dan tahu susu dibuat.</p>
+        </div>
+        <div class="card step">
+          <h3>Konfirmasi dan ambil</h3>
+          <p>Setelah dikabari, konfirmasi pesananmu. Cara pengambilan dan pembayaran disepakati dengan admin.</p>
+        </div>
+      </div>
+      <div class="order-box">
+        <div>
+          <p class="price"><span class="js-harga">Rp10.000</span> <span class="unit">/ kemasan</span></p>
+          <p id="isiTahu">Isi per kemasan, rasa, dan cara penyimpanan bisa ditanyakan ke admin.</p>
+        </div>
+        <a class="btn btn-primary js-wa js-label" data-jenis="tahu" href="#antrean"><span class="label">Daftar antrean</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="milk" id="susu-murni">
+    <div class="wrap">
+      <span class="eyebrow">Sambil menunggu</span>
+      <h2>Coba juga susu murninya</h2>
+      <p class="lead">Tahu susu dibuat dari kolostrum sapi-sapi yang sama dengan yang menghasilkan susu murni DenMilk. Susu murni tersedia setiap hari.</p>
+      <article class="card milk-card">
+        <div class="milk-media"><img src="assets/ilustrasi/susu.svg" alt="Ilustrasi botol susu murni DenMilk" width="200" height="260"></div>
+        <div class="milk-body">
+          <span class="tag">Tersedia setiap hari</span>
+          <h3>Susu Murni Segar</h3>
+          <div class="price">Rp12.000 <span>/ liter</span></div>
+          <ul>
+            <li>Diperah pagi dan sore setiap hari, lalu langsung dijual</li>
+            <li>Pembelian 5 liter ke atas bisa COD sore hari di Purwokerto</li>
+            <li>Panaskan dulu sebelum diminum dan simpan di lemari es</li>
+          </ul>
+          <a class="btn btn-ghost js-wa" data-jenis="susu" href="#susu-murni">Pesan susu murni</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="story" id="cerita">
+    <div class="wrap">
+      <div>
+        <span class="eyebrow">Cerita DenMilk</span>
+        <h2>Berawal dari kandang keluarga</h2>
+        <p>Suami Ibu Sumi adalah peternak sapi perah di Desa Kemutug Lor. Dulu banyak susu hasil perahan yang tidak masuk ke koperasi, jadi keluarga ini mencoba menjualnya sendiri kepada tetangga dan kenalan.</p>
+        <p>Kolostrum yang tidak bisa dijual seperti susu biasa juga tidak dibiarkan terbuang, tetapi diolah menjadi tahu susu. Sekarang DenMilk menjadi salah satu UMKM binaan BUMDes Desa Kemutug Lor.</p>
+      </div>
+      <blockquote class="quote">Usaha ini dijalankan dari hati, dan dimulai dari tidak punya apa-apa.<cite>Ibu Sumi, pemilik DenMilk</cite></blockquote>
+    </div>
+  </section>
+
+  <section class="location" id="lokasi">
+    <div class="wrap">
+      <div>
+        <span class="eyebrow">Lokasi</span>
+        <h2>Satu desa dengan Kebun Raya Baturraden</h2>
+        <p class="lead">DenMilk berada di Desa Kemutug Lor, desa di kaki Gunung Slamet yang juga menjadi lokasi Kebun Raya Baturraden. Kalau sedang main ke Baturraden, tanyakan ke admin apakah tahu susu sedang ada.</p>
+        <a class="btn btn-ghost" href="https://www.google.com/maps/search/?api=1&query=Kemutug+Lor%2C+Baturraden%2C+Banyumas" target="_blank" rel="noopener">Lihat Desa Kemutug Lor di Google Maps</a>
+      </div>
+      <div class="loc-card">
+        <dl>
+          <dt>Alamat</dt>
+          <dd>Desa Kemutug Lor, Kecamatan Baturraden, Kabupaten Banyumas, Jawa Tengah</dd>
+          <dt>Pengambilan</dt>
+          <dd>Di rumah DenMilk. Alamat lengkap dikirim admin lewat WhatsApp.</dd>
+          <dt>Susu murni</dt>
+          <dd>COD sore hari di Purwokerto untuk pembelian minimal 5 liter.</dd>
+        </dl>
+        <a class="btn btn-primary js-wa" data-jenis="tanya" href="#lokasi">Tanya admin</a>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap faq">
+      <span class="eyebrow">Pertanyaan</span>
+      <h2>Yang sering ditanyakan</h2>
+      <details>
+        <summary>Kenapa tahu susu DenMilk tidak selalu ada?</summary>
+        <p>Karena bahannya kolostrum, yaitu susu beberapa hari pertama setelah sapi melahirkan. Tahu susu baru bisa dibuat lagi ketika ada sapi yang melahirkan.</p>
+      </details>
+      <details>
+        <summary>Apa bedanya dengan tahu susu yang biasa dijual?</summary>
+        <p>Tahu susu pada umumnya dibuat dari susu biasa yang ditambah bahan penggumpal. Tahu susu DenMilk dibuat dari kolostrum yang menggumpal sendiri saat dimasak, jadi bahannya hanya kolostrum dan bumbu.</p>
+      </details>
+      <details>
+        <summary>Bagaimana cara daftar antrean?</summary>
+        <p>Tekan tombol daftar antrean, lalu kirim nama dan jumlah kemasan yang kamu mau. Admin akan mengabari ketika tahu susu sudah dibuat.</p>
+      </details>
+      <details>
+        <summary>Apakah ada produk yang tersedia setiap hari?</summary>
+        <p>Ada, yaitu susu murni segar Rp12.000 per liter. Susunya diperah pagi dan sore setiap hari.</p>
+      </details>
+    </div>
+  </section>
+
+  <div class="cta">
+    <h2>Mau kebagian tahu susu berikutnya?</h2>
+    <p>Daftar antrean sekarang, nanti admin yang mengabari.</p>
+    <a class="btn btn-primary js-wa js-label" data-jenis="tahu" href="#antrean">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8.5 8.5 0 0 1-12.6 7.4L3 21l1.6-5.2A8.5 8.5 0 1 1 21 12z"/></svg>
+      <span class="label">Daftar antrean lewat WhatsApp</span>
+    </a>
+  </div>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div><b>DenMilk</b> · Desa Kemutug Lor, Baturraden, Banyumas</div>
+    <div>Halaman promosi ini dibuat oleh Kelompok 12 Kewirausahaan, Informatika Universitas Jenderal Soedirman, <span id="tahun">2026</span>.</div>
+  </div>
+</footer>
+
+<a class="wa-float js-wa js-label-pendek" data-jenis="tahu" href="#antrean"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12a8.5 8.5 0 0 1-12.6 7.4L3 21l1.6-5.2A8.5 8.5 0 1 1 21 12z"/></svg><span class="label">Antrean</span></a>
+
+<script>
+  // ===================== PENGATURAN =====================
+  // Nomor WhatsApp admin. Boleh ditulis "081234567890", "0812-3456-7890", atau "6281234567890".
+  var NOMOR_WA = "0812-3245-6789";
+  // Stok tahu susu: "kosong" (tombol jadi "Daftar antrean") atau "ada" (tombol jadi "Pesan tahu susu").
+  var STOK_TAHU = "kosong";
+  // Harga tahu susu per kemasan.
+  var HARGA_TAHU = "Rp10.000";
+  // Isi per kemasan, misalnya "5 potong" atau "250 gram". Kosongkan jika belum tahu.
+  var ISI_TAHU = "";
+  // ======================================================
+
+  (function () {
+    // ubah format 08xx / 8xx / +62xx menjadi 62xx untuk link wa.me
+    var nomor = String(NOMOR_WA).replace(/\D/g, "");
+    if (nomor.charAt(0) === "0") nomor = "62" + nomor.slice(1);
+    else if (nomor.charAt(0) === "8") nomor = "62" + nomor;
+    var siap = /^628\d{7,12}$/.test(nomor);
+    var ada = String(STOK_TAHU).trim().toLowerCase() === "ada";
+
+    var pesan = {
+      tahu: ada
+        ? "Halo kak, saya mau pesan tahu susu DenMilk.\nJumlah: ... kemasan\nNama: \nDomisili: "
+        : "Halo kak, saya mau daftar antrean tahu susu DenMilk. Tolong kabari kalau sudah ada ya.\nJumlah: ... kemasan\nNama: \nDomisili: ",
+      susu: "Halo kak, saya mau pesan susu murni DenMilk.\nJumlah: ... liter\nNama: \nAmbil di Kemutug Lor / COD di Purwokerto: ",
+      tanya: "Halo kak, saya mau tanya tentang produk DenMilk."
+    };
+
+    document.querySelectorAll(".js-wa").forEach(function (el) {
+      var jenis = el.getAttribute("data-jenis") || "tanya";
+      if (siap) {
+        el.href = "https://wa.me/" + nomor + "?text=" + encodeURIComponent(pesan[jenis]);
+        el.target = "_blank";
+        el.rel = "noopener";
+      }
+    });
+
+    // label tombol dan status menyesuaikan stok
+    if (ada) {
+      document.querySelectorAll(".js-label .label").forEach(function (el) { el.textContent = "Pesan tahu susu lewat WhatsApp"; });
+      document.querySelectorAll(".js-label-pendek").forEach(function (el) {
+        var t = el.querySelector(".label") || el;
+        t.textContent = "Pesan";
+      });
+      document.getElementById("status").classList.add("ada");
+      document.getElementById("statusText").textContent = "Tahu susu sedang tersedia";
+    }
+
+    document.querySelectorAll(".js-harga").forEach(function (el) { el.textContent = HARGA_TAHU; });
+    if (ISI_TAHU) document.getElementById("isiTahu").textContent = "Isi per kemasan: " + ISI_TAHU + ". Rasa dan cara penyimpanan bisa ditanyakan ke admin.";
+    if (!siap) document.getElementById("setupNote").classList.add("show");
+    document.getElementById("tahun").textContent = new Date().getFullYear();
+  })();
+</script>
+</body>
+</html>

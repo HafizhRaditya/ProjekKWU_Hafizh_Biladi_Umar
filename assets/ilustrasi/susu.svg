@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 260"><ellipse cx="100" cy="246" rx="64" ry="9" fill="#3E2415" opacity=".12"/><defs><clipPath id="clipBotol"><path d="M80 36H120V58C120 70 132 76 142 88C152 100 156 110 156 124V222C156 234 147 242 135 242H65C53 242 44 234 44 222V124C44 110 48 100 58 88C68 76 80 70 80 58Z"/></clipPath></defs>
+  <path d="M80 36H120V58C120 70 132 76 142 88C152 100 156 110 156 124V222C156 234 147 242 135 242H65C53 242 44 234 44 222V124C44 110 48 100 58 88C68 76 80 70 80 58Z" fill="#FFFFFF"/>
+  <g clip-path="url(#clipBotol)">
+    <path d="M40 132Q70 118 100 132T160 132V250H40Z" fill="#FFF1DD"/>
+    <path transform="translate(56 204) scale(1.2)" d="M0 0c4-10 18-10 21-2s-4 14-12 13S-3 8 0 0z" fill="#3E2415"/><path transform="translate(114 220) scale(1)" d="M0 0c4-10 18-10 21-2s-4 14-12 13S-3 8 0 0z" fill="#3E2415"/><path transform="translate(128 150) scale(0.6)" d="M0 0c4-10 18-10 21-2s-4 14-12 13S-3 8 0 0z" fill="#3E2415"/>
+  </g>
+  <path d="M60 102C54 114 53 128 53 144" fill="none" stroke="#EAD9C2" stroke-width="7" stroke-linecap="round"/>
+  <rect x="58" y="156" width="84" height="32" rx="10" fill="#C9782E" stroke="#3E2415" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+  <text x="100" y="178" text-anchor="middle" font-family="Georgia, serif" font-weight="700" font-size="14.5" fill="#FFFFFF">DenMilk</text>
+  <path d="M80 36H120V58C120 70 132 76 142 88C152 100 156 110 156 124V222C156 234 147 242 135 242H65C53 242 44 234 44 222V124C44 110 48 100 58 88C68 76 80 70 80 58Z" fill="none" stroke="#3E2415" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+  <rect x="74" y="12" width="52" height="26" rx="7" fill="#5E7F3F" stroke="#3E2415" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M88 19v12M100 19v12M112 19v12" stroke="#3E2415" stroke-width="3" opacity=".35"/></svg>

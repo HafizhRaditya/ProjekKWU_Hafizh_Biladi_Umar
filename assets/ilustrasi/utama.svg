@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 440">
+    <defs><clipPath id="cakram"><circle cx="220" cy="206" r="182"/></clipPath></defs>
+    <ellipse cx="220" cy="420" rx="176" ry="25" fill="#3E2415" opacity=".12"/>
+    <circle cx="220" cy="206" r="182" fill="#E7EFDC"/>
+    <g clip-path="url(#cakram)">
+      <path transform="translate(40 70) scale(4.2)" d="M0 0c4-10 18-10 21-2s-4 14-12 13S-3 8 0 0z" fill="#3E2415"/><path transform="translate(300 20) scale(3.2)" d="M0 0c4-10 18-10 21-2s-4 14-12 13S-3 8 0 0z" fill="#3E2415"/><path transform="translate(340 250) scale(3.4)" d="M0 0c4-10 18-10 21-2s-4 14-12 13S-3 8 0 0z" fill="#3E2415"/><path transform="translate(70 250) scale(2.4)" d="M0 0c4-10 18-10 21-2s-4 14-12 13S-3 8 0 0z" fill="#3E2415"/>
+    </g>
+    <circle cx="220" cy="206" r="182" fill="none" stroke="#3E2415" stroke-width="6" stroke-linejoin="round" stroke-linecap="round"/>
+    <g transform="translate(262 34) scale(0.74)"><defs><clipPath id="clipBotolUtama"><path d="M80 36H120V58C120 70 132 76 142 88C152 100 156 110 156 124V222C156 234 147 242 135 242H65C53 242 44 234 44 222V124C44 110 48 100 58 88C68 76 80 70 80 58Z"/></clipPath></defs>
+  <path d="M80 36H120V58C120 70 132 76 142 88C152 100 156 110 156 124V222C156 234 147 242 135 242H65C53 242 44 234 44 222V124C44 110 48 100 58 88C68 76 80 70 80 58Z" fill="#FFFFFF"/>
+  <g clip-path="url(#clipBotolUtama)">
+    <path d="M40 132Q70 118 100 132T160 132V250H40Z" fill="#FFF1DD"/>
+    <path transform="translate(56 204) scale(1.2)" d="M0 0c4-10 18-10 21-2s-4 14-12 13S-3 8 0 0z" fill="#3E2415"/><path transform="translate(114 220) scale(1)" d="M0 0c4-10 18-10 21-2s-4 14-12 13S-3 8 0 0z" fill="#3E2415"/><path transform="translate(128 150) scale(0.6)" d="M0 0c4-10 18-10 21-2s-4 14-12 13S-3 8 0 0z" fill="#3E2415"/>
+  </g>
+  <path d="M60 102C54 114 53 128 53 144" fill="none" stroke="#EAD9C2" stroke-width="7" stroke-linecap="round"/>
+  <rect x="58" y="156" width="84" height="32" rx="10" fill="#C9782E" stroke="#3E2415" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+  <text x="100" y="178" text-anchor="middle" font-family="Georgia, serif" font-weight="700" font-size="14.5" fill="#FFFFFF">DenMilk</text>
+  <path d="M80 36H120V58C120 70 132 76 142 88C152 100 156 110 156 124V222C156 234 147 242 135 242H65C53 242 44 234 44 222V124C44 110 48 100 58 88C68 76 80 70 80 58Z" fill="none" stroke="#3E2415" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+  <rect x="74" y="12" width="52" height="26" rx="7" fill="#5E7F3F" stroke="#3E2415" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+  <path d="M88 19v12M100 19v12M112 19v12" stroke="#3E2415" stroke-width="3" opacity=".35"/></g>
+    <path d="M178 176c-10-14 10-22 0-38M214 170c-10-14 10-22 0-38" fill="none" stroke="#3E2415" stroke-width="5" stroke-linecap="round" opacity=".35"/>
+    <g transform="translate(22 96) scale(1.65)"><ellipse cx="120" cy="162" rx="104" ry="30" fill="#FFFFFF" stroke="#3E2415" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+  <ellipse cx="120" cy="159" rx="76" ry="19" fill="none" stroke="#5E7F3F" stroke-width="3" opacity=".45"/><g transform="translate(88 82)">
+    <path d="M0 0L32-16L64 0L32 16Z" fill="#FFFBEF" stroke="#3E2415" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M0 0L32 16V54L0 38Z" fill="#FBEBC4" stroke="#3E2415" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M32 16L64 0V38L32 54Z" fill="#F1D99B" stroke="#3E2415" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M14-2L32-11" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+  </g><g transform="translate(56 112)">
+    <path d="M0 0L32-16L64 0L32 16Z" fill="#FFFBEF" stroke="#3E2415" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M0 0L32 16V54L0 38Z" fill="#FBEBC4" stroke="#3E2415" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M32 16L64 0V38L32 54Z" fill="#F1D99B" stroke="#3E2415" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M14-2L32-11" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+  </g><g transform="translate(120 112)">
+    <path d="M0 0L32-16L64 0L32 16Z" fill="#FFFBEF" stroke="#3E2415" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M0 0L32 16V54L0 38Z" fill="#FBEBC4" stroke="#3E2415" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M32 16L64 0V38L32 54Z" fill="#F1D99B" stroke="#3E2415" stroke-width="4" stroke-linejoin="round" stroke-linecap="round"/>
+    <path d="M14-2L32-11" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round"/>
+  </g></g></svg>
